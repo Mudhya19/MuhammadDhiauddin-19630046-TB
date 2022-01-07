@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c0730c02-53e1-4b81-a8a8-c20d784eca63">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from wisata]]>
+	</queryString>
+	<field name="id_wisata" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_wisata" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kategori" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="biaya" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="127" splitType="Stretch">
+			<image>
+				<reportElement uuid="5674646a-3fc3-40f3-85d0-d67cb8c612b2" x="48" y="0" width="123" height="127"/>
+				<imageExpression><![CDATA["C:\\Users\\ROG G531\\Downloads\\logo-kominfo-copy.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="c68d0d18-69c2-43ad-9771-d3a49414f175" x="412" y="0" width="125" height="92"/>
+				<imageExpression><![CDATA["C:\\Users\\ROG G531\\Downloads\\Lambang_Kabupaten_Tapin.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="b8028126-ef06-499b-b74d-0f4cf25fc9ef" x="221" y="40" width="158" height="20"/>
+				<textElement/>
+				<text><![CDATA[Aplikasi BASTARI Wisata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ac691702-2571-4bb2-8f69-6c113dffee6d" x="211" y="20" width="168" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kabupaten Tapin, Kalimantan Selatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e96b2085-bb3b-450f-82af-03e79e26f3de" x="201" y="0" width="167" height="20"/>
+				<textElement/>
+				<text><![CDATA[Dinas Komunikasi dan Informatika]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement uuid="2e8d6901-549f-427a-a65d-6e92f54f8946" x="0" y="0" width="552" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="761e6b19-d9bd-4a4a-8e71-61751a41b854" x="215" y="1" width="135" height="20"/>
+				<textElement/>
+				<text><![CDATA[Laporan data Objek Wisata]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="09a65f5e-cec8-4ceb-8e03-5c36244282b8" x="0" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[id_wisata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="63246e6e-101d-4130-af89-cb008f72aa87" x="92" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[nama_wisata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2c60c337-aa11-42fe-8ddd-b82912144de1" x="184" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81ac8917-8445-4048-b6ac-0fa80728bc3b" x="276" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[kategori]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d299496d-311d-4bad-a26b-7e659f7186dd" x="368" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[biaya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="941ff408-e8f1-4535-ab35-64258d696ff5" x="460" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[stock]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="c27aab7f-3a8d-43d7-aa94-cc65048ec458" x="0" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{id_wisata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a27a6c19-0f0b-49e1-bfb3-3e22f0d2e320" x="92" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nama_wisata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="971b3a45-ca75-42b0-b264-6528960cf95a" x="184" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="54b12422-c453-4f1c-a965-ef00840f3e83" x="276" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{kategori}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="59919d0d-2b81-4584-9ac6-329f0cab1df3" x="368" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{biaya}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="53e39f53-a972-40fa-8849-4541ca922525" x="460" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{stock}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

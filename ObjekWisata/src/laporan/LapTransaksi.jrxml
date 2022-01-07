@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cab81266-4980-4d72-9ec3-5943f4b2e8ae">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from transaksi]]>
+	</queryString>
+	<field name="id_transaksi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_pengunjung" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_wisata" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="waktu_transaksi" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_beli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_biaya" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="141" splitType="Stretch">
+			<line>
+				<reportElement uuid="2e8d6901-549f-427a-a65d-6e92f54f8946" x="3" y="139" width="552" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="ac691702-2571-4bb2-8f69-6c113dffee6d" x="211" y="20" width="168" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kabupaten Tapin, Kalimantan Selatan]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="5674646a-3fc3-40f3-85d0-d67cb8c612b2" x="48" y="0" width="123" height="127"/>
+				<imageExpression><![CDATA["C:\\Users\\ROG G531\\Downloads\\logo-kominfo-copy.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="c68d0d18-69c2-43ad-9771-d3a49414f175" x="412" y="0" width="125" height="92"/>
+				<imageExpression><![CDATA["C:\\Users\\ROG G531\\Downloads\\Lambang_Kabupaten_Tapin.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="e96b2085-bb3b-450f-82af-03e79e26f3de" x="201" y="0" width="167" height="20"/>
+				<textElement/>
+				<text><![CDATA[Dinas Komunikasi dan Informatika]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b8028126-ef06-499b-b74d-0f4cf25fc9ef" x="221" y="40" width="158" height="20"/>
+				<textElement/>
+				<text><![CDATA[Aplikasi BASTARI Wisata]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="761e6b19-d9bd-4a4a-8e71-61751a41b854" x="218" y="0" width="135" height="20"/>
+				<textElement/>
+				<text><![CDATA[Laporan data Transaksi Wisata]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="0e2e49d6-2645-46a9-9581-f38c5bbcfb09" x="0" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[id_transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5eb5dcf9-03be-4183-9bad-516a4c2eba1b" x="92" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[id_pengunjung]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d0fda0ff-0b69-4d1b-aed9-b8ee47a26933" x="184" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[id_wisata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="13127fbc-8bd3-4774-8841-265ae0af3204" x="276" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[waktu_transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5302441a-d2a7-4ece-b8bb-5688f41b9442" x="368" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[jumlah_beli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8899598c-9714-4f38-aa7a-ccf9f5232e73" x="460" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[total_biaya]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement uuid="7f51ace4-7518-47fc-a784-9375574b0b21" x="0" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{id_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="625b4e1a-9986-4381-bbbe-d15c364d7e4e" x="92" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{id_pengunjung}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4f383d91-a75a-4665-a061-0ac85c8e3a94" x="184" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{id_wisata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9bd138a9-6efe-4089-b094-45ee0f3517b7" x="276" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{waktu_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1514e36e-e0de-4cfe-8d7d-7b903d9ff081" x="368" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{jumlah_beli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b1c7566e-03b4-4277-9989-5d713dfc4355" x="460" y="0" width="92" height="20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{total_biaya}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
